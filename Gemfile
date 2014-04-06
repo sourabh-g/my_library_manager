@@ -22,7 +22,9 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'cucumber'
+  gem 'cucumber-rails' ,:require => false
+  gem 'database_cleaner'
+  gem 'capybara'
 end
 
 gem 'jquery-rails'
