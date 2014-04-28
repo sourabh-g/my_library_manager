@@ -1,4 +1,5 @@
 LibraryManagement::Application.routes.draw do
+  resources :lendees
   resources :books
 
 

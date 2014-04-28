@@ -1,0 +1,23 @@
+<h1>Listing lendees</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lendees.each do |lendee| %>
+  <tr>
+    <td><%= lendee.name %></td>
+    <td><%= link_to 'Show', lendee %></td>
+    <td><%= link_to 'Edit', edit_lendee_path(lendee) %></td>
+    <td><%= link_to 'Destroy', lendee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lendee', new_lendee_path %>
