@@ -2,7 +2,8 @@ Feature: Add a book
 
   Scenario: In order to maintain a library of books
   I should be able to add a book and lend it
-    Given I am on the add books page
+    Given I am on the home page
+    And I navigate to add books page
     When I enter the book details
     Then I should see details of new book
 
