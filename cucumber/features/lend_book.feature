@@ -5,6 +5,7 @@ Feature: Add a book
     Given I am on the add books page
     When I enter the book details
     Then I should see details of new book
+
     When I goto edit book page
     And I fill in the lendee details
     Then I should see the lendee details for the book
