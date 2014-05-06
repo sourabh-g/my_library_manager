@@ -24,7 +24,4 @@ describe Book do
       book.should_not be_valid
     end
   end
-
-
-
 end

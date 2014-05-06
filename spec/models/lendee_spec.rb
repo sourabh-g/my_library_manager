@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe Lendee do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should allow_mass_assignment_of(:name) }
 end

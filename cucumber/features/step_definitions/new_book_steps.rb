@@ -3,5 +3,5 @@ When(/^I enter the book details$/) do
 end
 
 And(/^I navigate to add books page$/) do
-  Pages::HomePage.new.goto_new_book_page
+  Pages::ManageBooksPage.new.goto_new_book_page
 end

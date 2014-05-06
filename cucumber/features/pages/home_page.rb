@@ -5,12 +5,12 @@ module Pages
       visit '/'
     end
 
-    def goto_edit_page
-      click_on 'Edit'
+    def goto_manage_lendees
+      click_on 'Manage Lendees'
     end
 
-    def goto_new_book_page
-      click_on 'New Book'
+    def goto_manage_books
+      click_on 'Manage Books'
     end
   end
 end
