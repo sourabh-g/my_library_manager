@@ -26,6 +26,9 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'shoulda-matchers'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'
