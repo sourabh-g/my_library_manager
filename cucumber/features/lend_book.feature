@@ -1,4 +1,4 @@
-Feature: Add and lend a book
+Feature: Lend a book
 
   Scenario: In order to maintain a library of books
   I should be able to add a book and lend it
