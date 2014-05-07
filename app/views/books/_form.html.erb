@@ -20,9 +20,7 @@
       <br/>
       <%= f.text_field :author %>
       <br/>
-      <%= f.label :lendee_name %>
-      <br/>
-      <%= f.text_field :lendee_name %>
+      Lent to <%= collection_select(:book, :lendee_id, @lendees, :id, :name,{include_blank: true}) %>
     </div>
     <div class="actions">
       <%= f.submit %>

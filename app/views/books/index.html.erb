@@ -4,6 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Author</th>
+    <th>Lent To</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +14,10 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
+        <td><%= book.lendee.name %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Delete', book, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-        <td><%= link_to 'Lend', 'books/' + book.id.to_s + '/lend', method: :put %></td>
       </tr>
   <% end %>
 </table>
