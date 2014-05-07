@@ -24,4 +24,24 @@ describe Book do
       book.should_not be_valid
     end
   end
+
+  describe '#lendee' do
+    context 'has a lendee' do
+      it 'returns lendee' do
+        book = Book.new
+        lendee = Lendee.create
+
+        book.lendee = lendee
+
+        expect(book.lendee).to eql lendee
+      end
+    end
+    context 'doesnt have a lendee' do
+      it 'returns NilLendee' do
+        book = Book.new
+
+        expect(book.lendee) == NilLendee.new
+      end
+    end
+  end
 end
