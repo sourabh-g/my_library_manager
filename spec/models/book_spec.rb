@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Book do
-  #it { should have_one :lendee }
+  it { should belong_to :lendee }
 
   describe 'validations' do
     it 'cannot have nil title' do
@@ -40,7 +40,7 @@ describe Book do
       it 'returns NilLendee' do
         book = Book.new
 
-        expect(book.lendee) == NilLendee.new
+        expect(book.lendee) == NilLendee.instance
       end
     end
   end

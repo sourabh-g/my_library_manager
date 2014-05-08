@@ -5,7 +5,7 @@ class Book < ActiveRecord::Base
   validates :author, :presence => true
 
   def lendee
-    super || NilLendee.new
+    super || NilLendee.instance
   end
 
 end
