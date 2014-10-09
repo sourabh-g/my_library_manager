@@ -14,7 +14,7 @@ Feature: Lend a book
     When I enter the book details
     Then I should see details of new book
 
-    Given I am on manage books page
-    And I navigate to edit book
-    And I lend the book
-    Then I should see the lendee details for the book
+#    Given I am on manage books page
+#    And I navigate to edit book
+#    And I lend the book
+#    Then I should see the lendee details for the book
